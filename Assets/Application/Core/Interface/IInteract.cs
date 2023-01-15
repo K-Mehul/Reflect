@@ -1,4 +1,4 @@
 public interface IInteract
 {
-    public void Collectibles();
+    public void Interactables();
 }

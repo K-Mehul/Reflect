@@ -6,7 +6,8 @@ public class SimpleAudioEvent : AudioEvent
     public AudioClip[] Clips;
     [Range(0f,1f)]
     public float Volume;
-    [Range(-3f, 3f)]
+    
+    [Range(-3f,3f)]
     public float Pitch;
     public override void PlayAudio(AudioSource source)
     {

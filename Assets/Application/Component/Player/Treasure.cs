@@ -1,11 +1,14 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Treasure : MonoBehaviour, IInteract
 {
-    public void Collectibles()
+    public FloatVar Levels;
+
+    public void Interactables()
     {
         GameManager.Instance.IsTotalEventsComplete = false;
-        Debug.Log("You win");
+        UIManager.Instance.ActivateScreen(2);
+        if(GameManager.Instance.CurrentSceneIndex == Levels.floatVariable + 1)
+            GameManager.Instance.levelLoader.LevelUnlock();
     }
 }

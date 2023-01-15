@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(collision.gameObject.GetComponent<IInteract>() != null)
         {
-            collision.gameObject.GetComponent<IInteract>().Collectibles();
+            collision.gameObject.GetComponent<IInteract>().Interactables();
         }
     }
 }

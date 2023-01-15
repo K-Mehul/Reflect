@@ -47,9 +47,9 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        //TotalNumberOfEvents = GameObject.FindObjectsOfType<GameEventListener>().Length;
-        _audio.PlayAudio(_source);
+        //_audio.PlayAudio(_source);
         levelLoader.Level();
+        UIManager.Instance.ActivateScreen(0);
     }
 
 
