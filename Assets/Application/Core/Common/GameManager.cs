@@ -49,13 +49,12 @@ public class GameManager : MonoBehaviour
     {
         //_audio.PlayAudio(_source);
         levelLoader.Level();
-        UIManager.Instance.ActivateScreen(0);
+        UIManager.Instance.ActivateScreen("LevelHolder");
     }
 
 
     public void CheckTotalEventComplete()
     {
-        Debug.Log(TotalNumberOfEvents);
         if(TotalNumberOfEvents <= 0)
         {
             IsTotalEventsComplete = true;

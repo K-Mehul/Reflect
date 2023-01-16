@@ -1515,7 +1515,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -1540,7 +1540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2202,6 +2202,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1083401568500882782, guid: ff635c4a070379745be5cce1e37112e2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083401568500882782, guid: ff635c4a070379745be5cce1e37112e2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 526756943}
+    - target: {fileID: 1083401568500882782, guid: ff635c4a070379745be5cce1e37112e2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 1083401570119544142, guid: ff635c4a070379745be5cce1e37112e2, type: 3}
       propertyPath: m_text
       value: RESTART
@@ -2556,6 +2568,18 @@ PrefabInstance:
     - target: {fileID: 1083401568500882777, guid: ff635c4a070379745be5cce1e37112e2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083401568500882782, guid: ff635c4a070379745be5cce1e37112e2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083401568500882782, guid: ff635c4a070379745be5cce1e37112e2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 526756943}
+    - target: {fileID: 1083401568500882782, guid: ff635c4a070379745be5cce1e37112e2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UnLoadLevel
       objectReference: {fileID: 0}
     - target: {fileID: 1083401570119544142, guid: ff635c4a070379745be5cce1e37112e2, type: 3}
       propertyPath: m_text
