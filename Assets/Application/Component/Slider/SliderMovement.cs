@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class SliderMovement : MonoBehaviour
@@ -42,11 +43,12 @@ public class SliderMovement : MonoBehaviour
         {
             if(aSlider == collections[i].sliderListenerGO)
             {
-                aSlider.GetComponent<Transform>().position = collections[i].SliderFinalPosition;
-                aSlider.enabled = false;
-                GameManager.Instance.TotalNumberOfEvents -= 1;
-                GameManager.Instance.CheckTotalEventComplete();
-
+                aSlider.GetComponent<Transform>().DOMove(collections[i].SliderFinalPosition, 2f).onComplete += () =>
+                {
+                    aSlider.enabled = false;
+                    GameManager.Instance.TotalNumberOfEvents -= 1;
+                    GameManager.Instance.CheckTotalEventComplete();
+                };
             }
         }
     }

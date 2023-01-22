@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class Treasure : MonoBehaviour, IInteract
 {
@@ -14,9 +15,15 @@ public class Treasure : MonoBehaviour, IInteract
 
     public void Interactables()
     {
+        StartCoroutine(Wait());
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1f);
         GameManager.Instance.IsTotalEventsComplete = false;
         UIManager.Instance.ActivateScreen("YouWIn");
         if(GameManager.Instance.CurrentSceneIndex == Levels.floatVariable + 1)
             GameManager.Instance.levelLoader.LevelUnlock();
-    }
+    } 
 }
